@@ -85,6 +85,8 @@ or
 python wedge_test.py --nuspan1
 ```
 
+To change the wedge model type, refer to wedge_test.py, Line 30. The default model_type is 'np'. It can be 'nn', 'pp', 'np', or 'pn' --> polarity of upper and lower interface (p=positive, n=negative).
+
 #### 3. To generate results for the **Simulated 2-D Marmousi Model** using **FISTA**:
 ```
 python marmousi2_test.py -f
@@ -94,14 +96,14 @@ or
 python marmousi2_test.py --fista
 ```
 
-#### 4. To generate results for **Real Data** using **SBL-EM**:
+<!-- #### 4. To generate results for **Real Data** using **SBL-EM**:
 ```
 python real_test.py -s
 ```
 or
 ```
 python real_test.py --sblem
-```
+``` -->
 
 ## Train NuSPAN
 
