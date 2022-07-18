@@ -36,6 +36,8 @@ k = 0.05              # sparsity factor
 zy, D_trace, zx, time_axis, wvlt_t, wvlt_amp = def_models.trace_mm(wvlt_type, wvlt_cfreq, num_samples, num_traces, k)
 
 # Load Marmousi2 model reflectivity
+import shutil
+shutil.unpack_archive('marmousi2_reflectivity.npy.zip')
 rc = np.load('marmousi2_reflectivity.npy')
 rc[np.abs(rc) < 0.01*np.max(np.abs(rc))] = 0.0  # muting low-amplitude spikes (<1% of the absolute of the maximum amplitude)
 # rc.astype(np.float32)
