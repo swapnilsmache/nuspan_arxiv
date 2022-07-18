@@ -115,20 +115,20 @@ To train **NuSPAN-1** or **NuSPAN-1**, follow a similar approach as above:
 
 #### 1. Train **NuSPAN-1**:
 ```
-python train nuspan -n1
+python train_nuspan.py -n1
 ```
 or
 ```
-python train nuspan --nuspan1
+python train_nuspan.py --nuspan1
 ```
 
 #### 2. Train **NuSPAN-2**:
 ```
-python train nuspan -n2
+python train_nuspan.py -n2
 ```
 or
 ```
-python train nuspan --nuspan2
+python train_nuspan.py --nuspan2
 ```
 
 ## Figure for Real Data
@@ -137,7 +137,7 @@ Run
 ```
 python figure_real.py
 ```
-to generate *Figure 5* in our paper, i.e., for results from a real dataset. This will generate the file *fig_real_xline_115.pdf*. The figure is generated using output arrays saved in the folders *real_bpi*, *real_fista*, *real_nuspan1*, *real_nuspan2*, and *real_sblem*.
+to generate *Figure 11* in our paper, i.e., for results from a real dataset. This will generate the file *fig_real_xline_115.pdf*. The figure is generated using output arrays saved in the folders *real_bpi*, *real_fista*, *real_nuspan1*, *real_nuspan2*, and *real_sblem*.
 
 ## Trained NuSPAN Models
 
