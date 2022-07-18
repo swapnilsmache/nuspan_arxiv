@@ -19,6 +19,10 @@ We recommend setting up a new **[conda](https://docs.conda.io/projects/conda/en/
 ```
 conda env create -f nuspan.yml
 ```
+[Optional] To run tests related to Basis Pursuit Inversion, an **Octave** installation is needed:
+```
+sudo apt install octave
+```
 
 ## Test
 
